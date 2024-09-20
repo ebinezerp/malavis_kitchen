@@ -23,31 +23,31 @@
         </div>
     </div>
     <div class="d-flex justify-content-center m-4 row">
-        <nav class="navbar navbar-expand-md col-lg-10 col-md-12 col-12">
+        <nav class="navbar sticky-top navbar-expand-md col-lg-10 col-md-12 col-12" id="main-nav">
             <div class="container-fluid">
                 <button class="navbar-toggler col-3" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav_bar" aria-controls="main_nav_bar" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon p-0"></span>
                 </button>
-                <a class="navbar-brand col-xxl-3 col-xl-4 col-lg-4 col-md-5" href="./">
+                <a class="navbar-brand col-xxl-3 col-xl-4 col-lg-4 col-md-5 col-sm-8 col-8" href="./">
                     <img src="logo.png" alt="Logo"/>
                     <span class="navbar-text">Malavi's Kitchen</span>
                 </a>
                 <div class="collapse navbar-collapse col-xxl-6 col-xl-8 col-lg-10 col-md-12" id="main_nav_bar">
                     <ul class="navbar-nav ms-auto col-xxl-6 col-xl-8 col-lg-10 col-md-12 d-flex justify-content-evenly p-1">
-                        <li class="nav-item text-center mb-2 active">
+                        <li class="nav-item text-center mb-2 active" onclick="navSelect(0)">
                             <i class="bi bi-house-door-fill"></i>
-                            <a href="" class="nav-link text-sm-center">
+                            <a href="#" class="nav-link text-sm-center">
                                 Home
                             </a>
                         </li>
-                        <li class="nav-item text-center mb-2">
+                        <li class="nav-item text-center mb-2" onclick="navSelect(1)">
                             <i class="bi bi-info-circle-fill"></i>
-                            <a href="" class="nav-link nav-text">About Us</a>
+                            <a href="#about-us" class="nav-link nav-text">About Us</a>
                         </li>
                         
-                        <li class="nav-item text-center mb-2">
+                        <li class="nav-item text-center mb-2" onclick="navSelect(2)">
                             <i class="bi bi-menu-button-wide-fill"></i>
-                            <a href="" class="nav-link nav-text">Menu</a>
+                            <a href="#item-section" class="nav-link nav-text">Menu</a>
                         </li>
                     </ul>
                 </div>
@@ -57,7 +57,6 @@
     
     
     <!---Carousel section-->
-    
     <div class="carousel-section d-flex justify-content-center row mt-5">
         <div id="carouselExampleCaptions" class="carousel slide col-xxl-10 col-xl-10 col-md-12">
             <div class="carousel-indicators">
@@ -125,13 +124,13 @@
     
     <!-- Menu Item section-->
     
-    <div id="item-section row d-flex justify-content-center">
+    <div id="item-section" class="row d-flex justify-content-center">
         <div class="container col-xxl-9 col-xl-9 col-lg-10 col-md-10 col-sm-11 col-12">
             <h3 class="text-center text-decoration-underline">Welcome to Our Menu</h3>
             <div class="item-category p-2 border border-2 rounded-2 m-2">
                 <h4>Tray Items</h4>
                 <div class="items-grid p-2 d-flex justify-content-around flex-wrap">
-                    <div class="item col-lg-3 col-md-4 col-sm-6 col-12 p-2 m-2 border rounded-2">
+                    <div class="item card col-lg-3 col-md-4 col-sm-6 col-12 p-2 m-2 border rounded-2">
                         <h6>Veg Meals</h6>
                         <p>Rice, Veg curry, Dal, Samber</p>
                         <table class="table table-no-bg">
@@ -143,7 +142,7 @@
                             </tr>
                         </table>
                     </div>
-                    <div class="item col-lg-3 col-md-4 col-sm-6 col-12 p-2 m-2 border rounded-2">
+                    <div class="item card col-lg-3 col-md-4 col-sm-6 col-12 p-2 m-2 border rounded-2">
                         <h6>Non Veg Meals - 1</h6>
                         <p>Rice, Veg curry, Dal, Samber, Egg Curry</p>
                         <table class="table table-no-bg">
@@ -155,7 +154,7 @@
                             </tr>
                         </table>
                     </div>
-                    <div class="item col-lg-3 col-md-4 col-sm-6 col-12 p-2 m-2 border rounded-2">
+                    <div class="item card col-lg-3 col-md-4 col-sm-6 col-12 p-2 m-2 border rounded-2">
                         <h6>Non Veg Meals - 2</h6>
                         <p>Rice, Veg curry, Dal, Samber, Chicken curry</p>
                         <table class="table table-no-bg">
@@ -173,7 +172,7 @@
             <div class="item-category p-2 border border-2 rounded-2 m-2">
                 <h4>Individual Items </h4>
                 <div class="items-grid p-2 d-flex justify-content-evenly flex-wrap">
-                    <div class="item col-lg-3 col-md-4 col-sm-6 col-12 p-2 m-2 border rounded-2">
+                    <div class="item card col-lg-3 col-md-4 col-sm-6 col-12 p-2 m-2 border rounded-2">
                         <h6>Mutton Curry</h6>
                         <table class="table table-no-bg">
                             <tr>
@@ -184,7 +183,7 @@
                             </tr>
                         </table>
                     </div>
-                    <div class="item col-lg-3 col-md-4 col-sm-6 col-12 p-2 m-2 border rounded-2">
+                    <div class="item card col-lg-3 col-md-4 col-sm-6 col-12 p-2 m-2 border rounded-2">
                         <h6>Mutton Curry</h6>
                         <table class="table table-no-bg">
                             <tr>
@@ -195,7 +194,7 @@
                             </tr>
                         </table>
                     </div>
-                    <div class="item col-lg-3 col-md-4 col-sm-6 col-12 p-2 m-2 border rounded-2">
+                    <div class="item card col-lg-3 col-md-4 col-sm-6 col-12 p-2 m-2 border rounded-2">
                         <h6>Mutton Curry</h6>
                         <table class="table table-no-bg">
                             <tr>
@@ -206,7 +205,7 @@
                             </tr>
                         </table>
                     </div>
-                    <div class="item col-lg-3 col-md-4 col-sm-6 col-12 p-2 m-2 border rounded-2">
+                    <div class="item card col-lg-3 col-md-4 col-sm-6 col-12 p-2 m-2 border rounded-2">
                         <h6>Mutton Curry</h6>
                         <table class="table table-no-bg">
                             <tr>
@@ -217,7 +216,7 @@
                             </tr>
                         </table>
                     </div>
-                    <div class="item col-lg-3 col-md-4 col-sm-6 col-12 p-2 m-2 border rounded-2">
+                    <div class="item card col-lg-3 col-md-4 col-sm-6 col-12 p-2 m-2 border rounded-2">
                         <h6>Mutton Curry</h6>
                         <table class="table table-no-bg">
                             <tr>
@@ -250,5 +249,6 @@
     </div>
 
 </div>
+<script src="script.js"></script>
 </body>
 </html>

@@ -29,6 +29,15 @@ body{
     border-bottom-right-radius: 30px;
 }
 
+nav.navbar{
+    position: sticky;
+}
+
+#main-nav.sticky-style{
+    background-color: #FABC3F;
+    border-radius: 10px;
+}
+
 .navbar-brand > img {
     width: 70px;
     height: 70px;
@@ -60,6 +69,10 @@ body{
 
 .item {
     border-color: #FF885B !important;
+}
+
+.item.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .item > .table-no-bg {
     background-color: transparent !important;
