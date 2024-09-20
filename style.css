@@ -95,3 +95,7 @@ nav.navbar{
 .footer > .info-section > div {
     background-color: #EAE4DD !important;
 }
+
+nav#navbar {
+    position: sticky;
+}
