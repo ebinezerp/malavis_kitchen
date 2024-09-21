@@ -1,16 +1,16 @@
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     width: 100%;
     min-height: 100%;
-    background-color: #FFF7F7;
+    font-family: "Lato", sans-serif;
 }
 
-.headline-bar{
+.headline-bar {
     width: 100%;
 }
 
@@ -19,37 +19,39 @@ body{
     min-height: 30px;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
-    padding:0;
+    padding: 0;
 }
 
 .headline-bar > .pannel > marquee {
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
 }
 
-nav.navbar{
+nav.navbar {
     position: sticky;
+    z-index: 1000;
+    background-color: white;
 }
 
-#main-nav.sticky-style{
-    background-color: #FABC3F;
-    border-radius: 10px;
+.branding {
+    font-family: "Marck Script", cursive !important;
+    font-size:200%;
 }
 
 .navbar-brand > img {
-    width: 70px;
-    height: 70px;
+    width: 8vw;
+    height: 8vh;
 }
 
-.nav-item{
+.nav-item {
     margin-right: 1%;
-    padding:1%;
+    padding: 1%;
 }
 
-.nav-item.active{
-    border-bottom: 3px solid  #FF6600;
+.nav-item.active {
+    border-bottom: 3px solid #FF6600;
 }
 
 .nav-item > * {
@@ -62,21 +64,23 @@ nav.navbar{
     padding: 0 !important;
 }
 
-.carousel-section{
+.carousel-section {
     min-height: 100px;
-    border-radius:20px;
+    border-radius: 20px;
 }
 
-.item {
-    border-color: #FF885B !important;
+#about-us > div.content {
+    font-style: italic;
 }
 
 .item.card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
 .item > .table-no-bg {
     background-color: transparent !important;
 }
+
 .item > .table-no-bg th, .table-no-bg td {
     background-color: transparent !important;
     padding-top: 1px;
@@ -88,12 +92,13 @@ nav.navbar{
     font-size: smaller;
 }
 
-.footer > .info-section{
-    background-color: #295F98;
+.footer > .info-section {
+    background-color: #1A3636;
+    color: white;
 }
 
 .footer > .info-section > div {
-    background-color: #EAE4DD !important;
+    border: 1px solid black;
 }
 
 nav#navbar {
