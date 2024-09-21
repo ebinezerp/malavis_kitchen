@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-padding-top: 80px; /* Set this to your header's height */
+}
+
 body {
     width: 100%;
     min-height: 100%;
@@ -29,9 +33,7 @@ body {
     border-bottom-right-radius: 30px;
 }
 
-nav.navbar {
-    position: sticky;
-    z-index: 1000;
+.menu-container {
     background-color: white;
 }
 
@@ -64,6 +66,13 @@ nav.navbar {
 
 .nav-item > .nav-link {
     padding: 0 !important;
+}
+
+:target::before {
+    content: "";
+    display: block;
+    min-height: 60px; /* Adjust this value based on your header's height */
+    margin-top:-160px;
 }
 
 .carousel-section {
