@@ -41,8 +41,10 @@ nav.navbar {
 }
 
 .navbar-brand > img {
-    width: 8vw;
-    height: 8vh;
+    min-width: 30px;
+    min-height: 30px;
+    width: 6vw;
+    height: 7vh;
 }
 
 .nav-item {
